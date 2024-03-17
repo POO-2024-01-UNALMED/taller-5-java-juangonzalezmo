@@ -22,11 +22,11 @@ public class Animal {
 	public Animal(){totalAnimales++;}
 	
 	public static String totalPorTipo() {
-		return "Mamiferos: " + (Mamifero.getNumber())+
-				"\nAves: " + (Ave.getNumber())+
-				"\nReptiles: " + (Reptil.getNumber())+
-				"\nPeces: " + (Pez.getNumber())+
-				"\nAnfibios: " + (Anfibio.getNumber());
+		return "Mamiferos: " + Mamifero.getListado().size()+
+				"\nAves: " + Ave.getListado().size()+
+				"\nReptiles: " + Reptil.getListado().size()+
+				"\nPeces: " + Pez.getListado().size()+
+				"\nAnfibios: " + Anfibio.getListado().size();
 				
 	}
 	public String toString() {
