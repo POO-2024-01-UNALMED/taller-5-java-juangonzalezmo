@@ -5,7 +5,7 @@ public class Zona {
 	
 	private String nombre;
 	private Zoologico zoo ;
-	private static ArrayList<Animal> animales = new ArrayList<>();
+	private ArrayList<Animal> animales = new ArrayList<>();
 	
 	
 	
@@ -38,7 +38,7 @@ public class Zona {
 		return zoo;
 	}
 
-	public static ArrayList<Animal> getAnimales() {
+	public  ArrayList<Animal> getAnimales() {
 		return animales;
 	}
 
@@ -50,8 +50,8 @@ public class Zona {
 		this.zoo = zoo;
 	}
 
-	public static void setAnimales(ArrayList<Animal> animales) {
-		Zona.animales = animales;
+	public void setAnimales(ArrayList<Animal> animales) {
+		this.animales = animales;
 	}
 	
 	

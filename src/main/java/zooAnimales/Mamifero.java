@@ -19,7 +19,7 @@ public class Mamifero extends Animal {
 		listado.add(this);
 	}
 
-	public Mamifero(){}
+	public Mamifero(){listado.add(this);}
 	
 	public static int getNumber() {
 		return listado.size();

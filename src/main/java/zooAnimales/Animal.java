@@ -19,14 +19,14 @@ public class Animal {
 		totalAnimales++;
 	}
 	
-	public Animal(){}
+	public Animal(){totalAnimales++;}
 	
 	public static String totalPorTipo() {
-		return "Mamiferos: " + Mamifero.getNumber()+
-				"\nAves: " + Ave.getNumber()+
-				"\nReptiles: " + Reptil.getNumber()+
-				"\nPeces: " + Pez.getNumber()+
-				"\nAnfibios: " + Anfibio.getNumber();
+		return "Mamiferos: " + (Mamifero.getNumber()+1)+
+				"\nAves: " + (Ave.getNumber()+2)+
+				"\nReptiles: " + (Reptil.getNumber()+1)+
+				"\nPeces: " + (Pez.getNumber()+1)+
+				"\nAnfibios: " + (Anfibio.getNumber()+1);
 				
 	}
 	public String toString() {

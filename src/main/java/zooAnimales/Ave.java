@@ -15,7 +15,7 @@ public class Ave extends Animal{
 		listado.add(this);
 	}
 
-	public Ave(){}
+	public Ave(){listado.add(this);}
 	
 	public static int getNumber() {
 		return listado.size();
